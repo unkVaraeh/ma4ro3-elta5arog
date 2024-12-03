@@ -1,0 +1,519 @@
+/* start landig  */
+body{
+  background-color: #F7FFF7;
+}
+
+.landing {
+  width: 100%;
+  height: 100vb;
+  position: relative;
+}
+
+.landing::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("/img/img-gover/img-cairo/main-photo.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  filter: blur(5px) brightness(0.4);
+  z-index: -1;
+}
+
+.landing .image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.landing .image img {
+  border-radius: 10px;
+  border: 1px solid white;
+  height: 70%;
+}
+
+.landing .main-title {
+  position: absolute;
+  top: 145px;
+  right: 1500px;
+  width: 204px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 1.4;
+  text-shadow: -5px 5px rgba(0, 0, 0, 0.2), -4px 4px rgba(0, 0, 0, 0.4),
+    -3px 3px rgba(0, 0, 0, 0.6), -2px 2px rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  animation: intro1;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.landing .main-title::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 112px;
+  z-index: -1;
+  border: 2px solid #4ECDC4;
+}
+
+.landing .main-title p {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 60px;
+}
+
+@keyframes intro1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    right: 80%;
+    opacity: 1;
+  }
+}
+
+.landing .sub-text {
+  position: absolute;
+  color: white;
+  top: 41%;
+  width: 300px;
+  right: 10%;
+  word-spacing: 3px;
+  line-height: 1.6;
+  font-size: 22px;
+  padding: 5px 10px;
+  border: 2px solid#4ECDC4;
+  border-radius: 10px;
+  animation: intro2;
+  animation-delay: 0.75s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes intro2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* end landing  */
+
+/* start content  */
+
+/* عمل مسافة بين كل سيكشن */
+.content {
+  margin: 30px;
+}
+
+/* تهيئة العنوان الرئسي */
+.content .title h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+/* تهيئة الحاوية الفرعية */
+.content .landmark {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition-duration: 0.5s;
+  background-color:#4ECDC4;
+  margin: 30px auto 50px;
+
+}
+
+/* تهيئة عناصر الحاوىة للتعامل معها بشكل اسهل */
+
+.content .landmark>div {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 70%) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition-duration: 0.5s;
+  overflow:hidden !important;
+}
+
+
+/* اعداد الصورة 1 */
+.content .landmark .image1 {
+  top: 6%;
+  right: 5%;
+  width: 229px;
+  height: 229px;
+}
+
+/* اعداد الصورة 2 */
+.content .landmark .image2 {
+  right: 14%;
+  top: 59%;
+  height: 180px;
+  width: 180px;
+}
+
+/* اعداد الصورة 3 */
+.content .landmark .image3 {
+  right: 32%;
+  top: 31%;
+  width: 190px;
+  height: 190px;
+}
+
+/* /* اعداد الصورة 4 */
+.content .landmark .image4 {
+  right: 56%;
+  top: 56%;
+  width: 185px;
+  height: 185px;
+}
+
+/* اعداد الصورة 5 */
+.content .landmark .image5 {
+  right: 51%;
+  top: 6%;
+  width: 170px;
+  height: 170px;
+}
+
+/* اعداد الصورة 6 */
+.content .landmark .image6 {
+  top: 47%;
+  right: 79%;
+  width: 160px;
+  height: 160px;
+}
+
+/* اعداد الصورة 7 */
+.content .landmark .image7 {
+  right: 76%;
+  top: 7%;
+}
+
+/* جعل بقية الصور تذهب الي اليمن عند الضغط علي الصورة */
+.content .landmark>div.goright {
+  right: 100%;
+}
+
+
+/* جعل الصورة تغير شكلها عند الضغط عليها */
+.content .landmark div.active {
+  top: 5%;
+  right: 0;
+  height: 90%;
+  width: 50%;
+  border-radius: 15px;
+  z-index: 10;
+}
+.content .landmark div.active img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.content .landmark div.aber{
+  opacity: 1;
+  left: 0;
+  z-index: 100;
+}
+
+.content .landmark .descriotion{
+  width: 50%;
+  height: 100%;
+  border-radius: 0;
+  position: absolute;
+  left: 0;
+  cursor: auto;
+  box-shadow: none;
+  left: -50%;
+  opacity: 0;
+  transition-duration: 0.3;
+  transition-delay: 0.5;
+  color: white;
+}
+.content .landmark .descriotion div{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.content .landmark .descriotion div p.land-name {
+  font-size: 50px;
+  text-transform: uppercase;
+  align-self: flex-start;
+  margin-left: 160px;
+}
+.content .landmark .descriotion div p.land-des {
+  width: 350px;
+  align-self: flex-start;
+  margin-left: 160px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+.content .landmark .descriotion div button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+.content .landmark .descriotion div button:hover {
+  color: #F7FFF7;
+  background: #4ECDC4;
+  border: 1px solid #4ECDC4;
+  text-shadow: 0 0 5px #F7FFF7, 0 0 10px #F7FFF7, 0 0 20px #F7FFF7;
+  box-shadow: 0 0 5px #4ECDC4, 0 0 20px #4ECDC4, 0 0 50px #4ECDC4,
+    0 0 100px #4ECDC4;
+}
+
+.content .landmark .descriotion div button a{
+  font-size: 18px;
+  color: #F7FFF7;
+
+}
+
+.content .hotels{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1rem;
+  justify-content: center;
+  grid-auto-flow: dense;
+  margin: 30px 0;
+}
+.content .hotels>div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid #292f36;
+  border-radius: 15px;
+  overflow: hidden;
+  transition-duration: 0.4s;
+}
+.content .hotels>div:hover{
+   border-color: #4ECDC4;
+}
+.content .hotels>div>div{
+  margin: 5px;
+  transition-duration: 0.4s;
+}
+.content .hotels>div>.h-image{
+  display: flex;
+  height: 200px;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.content .hotels>div>.h-image img{
+  width: 100%;
+  height: 100%;
+}
+.content .hotels>div>.btn{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.content .hotels>div>.btn>div{
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #292f36;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #292f36;
+  transition: 0.5s ease;
+  user-select: none;
+}
+.content .hotels>div>.btn>div:hover{
+  color: #F7FFF7;
+  background: #4ECDC4;
+  border: 1px solid #4ECDC4;
+  text-shadow: 0 0 5px #F7FFF7, 0 0 10px #F7FFF7, 0 0 20px #F7FFF7;
+  box-shadow: 0 0 5px #4ECDC4, 0 0 20px #4ECDC4, 0 0 50px #4ECDC4,
+    0 0 100px #4ECDC4;
+}
+
+.up1 {
+  transition: 240ms ease-out;
+  box-shadow: inset 0 -1px rgba(#111,.2),
+              inset 0 1px rgba(#fff,.2);
+}
+
+.up1:hover,
+.up1:active,
+.up1:focus {
+  box-shadow: inset 0 -1px rgba(#111,.4),
+              inset 0 1px rgba(#fff,.4),
+    				2px 2px 3px rgba(#111,.2);
+}
+
+.up6 {
+  box-shadow: 1px 1px 6px rgba(#000,.2);
+}
+
+.hotel_form {
+  position: relative;
+  width: 20rem;
+  padding: 2rem 0;
+  margin: 7rem auto;
+  font-family: 'Lato', sans-serif;
+  color: #F7FFF7;
+  border-radius: 1rem;
+  background: #4ECDC4;
+}
+
+.hotel_form input {
+  border: 0;
+  border-radius: 0.25rem;
+}
+
+.w--whole { width:16rem }
+.w--halves { width:7rem }
+.w--thirds { width:4rem }
+
+.title {
+  position: absolute;
+  width: 100%;
+  bottom: 100%;
+  margin: 0 0 2rem;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: normal;
+  text-align: center;
+  color:  #4ECDC4;
+}
+
+.text_input {
+  display: block;
+  float: left;
+  height: 2rem;
+  margin: 0 0 1rem 2rem;
+  padding: 0;
+  font-size: 1rem;
+  color: #424242;
+  text-align: center;
+  background:  #F7FFF7;
+}
+
+.text_input:hover,
+.text_input:active,
+.text_input:focus {
+  background: #EfF9Ff;
+}
+
+.label {
+  display: block;
+  float: left;
+  text-align: center;
+  margin: 0 0 0.5rem 2rem;
+}
+
+.calender {
+  float: left;
+  margin: 0 0 2rem 2rem;
+  height: 6rem;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.select {
+  width: calc(100% + 17px);
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  font-family: 'Lato', sans-serif;
+  text-indent: -3px;
+}
+
+.select > option {
+  color: #555;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.month {
+  height: 2rem;
+  font-size: 1rem;
+  color: #f5f5f5;
+  transition: 240ms ease-out;
+  background: #4ECDC4;
+  border: 2px solid white;
+}
+
+.month:hover,
+.month:active,
+.month:focus {
+  background: #1976D2;
+}
+
+.day {
+  height: 4rem;
+  font-size: 2rem;
+  color: #0D47A1;
+  transition: 240ms ease-out;
+  background: #E3F2FD;
+}
+
+.day:hover,
+.day:active,
+.day:focus {
+  background: #EfF9Ff;
+}
+
+.submit {
+  height: 3rem;
+  margin: 0 0 0 2rem;
+  color: #eee;
+  line-height: 1;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 240ms;
+  background: #00E676;
+  font-family: 'Lato', sans-serif;
+}
+
+.submit:hover {
+  background: #00d855;
+}
