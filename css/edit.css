@@ -1,0 +1,70 @@
+.row.g-0 {
+    display: flex;
+    justify-content: center;
+}
+/*تعديل كلا من book room,our room 
+book room is first */
+
+a.btn.btn-light.py-md-3.px-md-5.animated.slideInRight {   
+    border-radius: 20px;
+}
+
+/*out room*/
+a.btn.btn-primary.py-md-3.px-md-5.me-3.animated.slideInLeft {
+    border-radius:20px;
+}
+
+div#navbarCollapse{
+    display: flex !important; 
+    justify-content: space-between !important ;
+   min-width: 100% !important;
+}
+.navbar-nav.mr-auto.py-0 {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+
+.col-lg-7.px-5.text-start,
+.col-lg-5.px-5.text-end  {
+
+    display: none;}
+    .text-primary {
+        color:  #1699fe !important;
+
+
+    }
+
+    .g-3{
+        display: none;
+        justify-content: space-between;
+        min-width: 100%;
+                        
+    
+                        }
+      /*تعديل نصف قطر (our rooms , book a room )اللي موجودين في نصف صفحة الهوم */
+        a.btn.btn-light.py-md-3.px-md-5 {
+            border-radius: 20px;
+        }
+        .btn.btn-primary, .btn.btn-secondary {
+            color: #FFFFFF;
+            border-radius: 20px;}
+
+            /*ازالة خانة الكوبي رايت الخاصه بالموقع الاصلي*/
+            .copyright {
+                display: none;
+            }
+
+            .col-lg-9 .row gx-0 bg-white d-none d-lg-flex .col-lg-7 px-5 text-start .search-bar{
+
+                margin: 10px;
+                width: 150%;
+            }
+
+            .search-bar{
+                display: flex;
+                width: 150%;
+                
+            }
+        
+        

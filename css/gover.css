@@ -1,0 +1,443 @@
+/* start landig  */
+body {
+  background-color: #f7fff7;
+}
+
+.landing {
+  width: 100%;
+  height: 100vb;
+  position: relative;
+}
+
+.landing::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("../img/img-gover/img-cairo/main-photo.jfif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  filter: blur(5px) brightness(0.4);
+  z-index: -1;
+}
+
+.landing .image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.landing .image img {
+  border-radius: 10px;
+  border: 1px solid white;
+  height: 60%;
+}
+
+.landing .main-title {
+  position: absolute;
+  top: 180px;
+  right: 1500px;
+  width: 204px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 1.4;
+  text-shadow: -5px 5px rgba(0, 0, 0, 0.2), -4px 4px rgba(0, 0, 0, 0.4),
+    -3px 3px rgba(0, 0, 0, 0.6), -2px 2px rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  animation: intro1;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.landing .main-title::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 112px;
+  z-index: -1;
+  border: 2px solid white;
+  background: #4ecdc4;
+  margin-left: -20px;
+}
+
+.landing .main-title p {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-size: 60px;
+}
+
+@keyframes intro1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    right: 80%;
+    opacity: 1;
+  }
+}
+
+.landing .sub-text {
+  position: absolute;
+  color: white;
+  top: 41%;
+  width: 300px;
+  right: 10%;
+  word-spacing: 3px;
+  line-height: 1.6;
+  font-size: 22px;
+  padding: 5px 10px;
+  border: 2px solid white;
+  background: #4ecdc4;
+  border-radius: 10px;
+  animation: intro2;
+  animation-delay: 0.75s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  margin-right: -100px;
+}
+
+@keyframes intro2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* end landing  */
+
+/* start content  */
+
+/* عمل مسافة بين كل سيكشن */
+
+.content {
+  margin: 30px;
+}
+
+/* تهيئة العنوان الرئسي */
+.content .title h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+/* تهيئة الحاوية الفرعية */
+.content .landmark {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition-duration: 0.5s;
+  background-color: #4ecdc4;
+  margin: 30px auto 50px;
+}
+
+.content .landmark #bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out; /* لتأثير انتقال سلس */
+  opacity: 1;
+  z-index: 0;
+  filter: blur(5px) brightness(0.3);
+  display: none;
+}
+
+
+.content .landmark #bg-image.hidden{
+  opacity: 0;
+}
+
+/* تهيئة عناصر الحاوىة للتعامل معها بشكل اسهل */
+
+.content .landmark > div {
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 70%) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition-duration: 0.5s;
+  overflow: hidden !important;
+  z-index: 1;
+}
+
+/* اعداد الصورة 1 */
+
+.content .landmark .image1 {
+  top: 6%;
+  right: 5%;
+  width: 229px;
+  height: 229px;
+}
+
+/* اعداد الصورة 2 */
+
+.content .landmark .image2 {
+  right: 14%;
+  top: 59%;
+  height: 180px;
+  width: 180px;
+}
+
+/* اعداد الصورة 3 */
+
+.content .landmark .image3 {
+  right: 32%;
+  top: 31%;
+  width: 190px;
+  height: 190px;
+}
+
+/* /* اعداد الصورة 4 */
+
+.content .landmark .image4 {
+  right: 56%;
+  top: 56%;
+  width: 185px;
+  height: 185px;
+}
+
+/* اعداد الصورة 5 */
+
+.content .landmark .image5 {
+  right: 51%;
+  top: 6%;
+  width: 170px;
+  height: 170px;
+}
+
+/* اعداد الصورة 6 */
+
+.content .landmark .image6 {
+  top: 47%;
+  right: 79%;
+  width: 160px;
+  height: 160px;
+}
+
+/* اعداد الصورة 7 */
+
+.content .landmark .image7 {
+  right: 76%;
+  top: 7%;
+}
+
+/* جعل بقية الصور تذهب الي اليمن عند الضغط علي الصورة */
+
+.content .landmark > div.goright {
+  right: calc(100% + 100px);
+}
+
+/* جعل الصورة تغير شكلها عند الضغط عليها */
+
+.content .landmark div.active {
+  top: 5%;
+  right: 0;
+  height: 90%;
+  width: 50%;
+  border-radius: 15px;
+  z-index: 10;
+  box-shadow: none;
+}
+
+.content .landmark div.active img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.content .landmark div.aber {
+  opacity: 1;
+  left: 0;
+  z-index: 100;
+}
+
+.content .landmark .descriotion {
+  width: 50%;
+  height: 100%;
+  border-radius: 0;
+  position: absolute;
+  left: 0;
+  cursor: auto;
+  box-shadow: none;
+  left: -50%;
+  opacity: 0;
+  transition-duration: 0.3;
+  transition-delay: 0.5;
+  color: white;
+}
+
+.content .landmark .descriotion div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content .landmark .descriotion div p.land-name {
+  font-size: 50px;
+  text-transform: uppercase;
+  align-self: flex-start;
+  margin-left: 160px;
+}
+
+.content .landmark .descriotion div p.land-des {
+  width: 350px;
+  align-self: flex-start;
+  margin-left: 160px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.content .landmark .descriotion div button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.content .landmark .descriotion div button:hover {
+  color: #f7fff7;
+  background: #4ecdc4;
+  border: 1px solid #4ecdc4;
+  text-shadow: 0 0 5px #f7fff7, 0 0 10px #f7fff7, 0 0 20px #f7fff7;
+  box-shadow: 0 0 5px #4ecdc4, 0 0 20px #4ecdc4, 0 0 50px #4ecdc4,
+    0 0 100px #4ecdc4;
+}
+
+.content .landmark .descriotion div button a {
+  font-size: 18px;
+  color: #f7fff7;
+}
+
+.hotel-title,.restorant-title {
+  padding: 20px;
+}
+
+.hotel-title h1, .restorant-title  h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.content .slide-show {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 5%;
+}
+
+.content .slide-show .hotels ,.content .slide-show .restorants {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.content .slide-show .hotels .hotel , .content .slide-show .restorants .restorant {
+  min-width: 33.33%; /* Show three slides at once */
+  box-sizing: border-box;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .slide-show .hotels .hotel img , .content .slide-show .restorants .restorant img {
+  width: 100%;
+  border-radius: 10px;
+  transition: filter 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.content .slide-show .hotels .hotel .hotel-b , .content .slide-show .restorants .restorant .restorant-b{
+  display: flex;
+  justify-content: space-around;
+}
+
+.content .slide-show .hotels .hotel .hotel-b button ,.content .slide-show .restorants .restorant .restorant-b button {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.content .slide-show .hotels .hotel .hotel-b button:hover , .content .slide-show .restorants .restorant .restorant-b button:hover{
+  color: #f7fff7;
+  background: #4ecdc4;
+  border: 1px solid #4ecdc4;
+  text-shadow: 0 0 5px #f7fff7, 0 0 10px #f7fff7, 0 0 20px #f7fff7;
+  box-shadow: 0 0 5px #4ecdc4, 0 0 20px #4ecdc4, 0 0 50px #4ecdc4,
+    0 0 100px #4ecdc4;
+}
+
+
+
+.content .slide-show .hotels .hotel .hotel-b button:hover a ,.content .slide-show .restorants .restorant .restorant-b button:hover a{
+  color: white;
+}
+
+.content .slide-show .controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.content .slide-show .controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+}
+
+.content .slide-show .controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
