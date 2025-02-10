@@ -1,6 +1,6 @@
 /* start landig  */
-body{
-  background-color: #F7FFF7;
+body {
+  background-color: #f7fff7;
 }
 
 .landing {
@@ -14,7 +14,7 @@ body{
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url("/img/img-gover/img-cairo/main-photo.jfif");
+  background-image: url("../img/img-gover/img-cairo/main-photo.jfif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
@@ -34,12 +34,12 @@ body{
 .landing .image img {
   border-radius: 10px;
   border: 1px solid white;
-  height: 70%;
+  height: 60%;
 }
 
 .landing .main-title {
   position: absolute;
-  top: 145px;
+  top: 180px;
   right: 1500px;
   width: 204px;
   margin-left: 10px;
@@ -61,7 +61,9 @@ body{
   position: absolute;
   left: 112px;
   z-index: -1;
-  border: 2px solid #4ECDC4;
+  border: 2px solid white;
+  background: #4ecdc4;
+  margin-left: -20px;
 }
 
 .landing .main-title p {
@@ -94,13 +96,18 @@ body{
   line-height: 1.6;
   font-size: 22px;
   padding: 5px 10px;
+<<<<<<< HEAD
   border: 2px solid#4ECDC4;
-  border-radius: 10px;
+=======
+  border: 2px solid white;
   animation: intro2;
   animation-delay: 0.75s;
-  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   opacity: 0;
+<<<<<<< HEAD
+=======
+  margin-right: -100px;
+>>>>>>> fead3ed (elma4ro3 elgded)
 }
 
 @keyframes intro2 {
@@ -118,6 +125,10 @@ body{
 /* start content  */
 
 /* عمل مسافة بين كل سيكشن */
+<<<<<<< HEAD
+=======
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content {
   margin: 30px;
 }
@@ -137,14 +148,42 @@ body{
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   transition-duration: 0.5s;
+<<<<<<< HEAD
   background-color:#4ECDC4;
   margin: 30px auto 50px;
 
+=======
+  background-color: #4ecdc4;
+  margin: 30px auto 50px;
+}
+
+.content .landmark #bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out; /* لتأثير انتقال سلس */
+  opacity: 1;
+  z-index: 0;
+  filter: blur(5px) brightness(0.3);
+  display: none;
+}
+
+
+.content .landmark #bg-image.hidden{
+  opacity: 0;
+>>>>>>> fead3ed (elma4ro3 elgded)
 }
 
 /* تهيئة عناصر الحاوىة للتعامل معها بشكل اسهل */
 
+<<<<<<< HEAD
 .content .landmark>div {
+=======
+.content .landmark > div {
+>>>>>>> fead3ed (elma4ro3 elgded)
   height: 150px;
   width: 150px;
   border-radius: 20px;
@@ -156,11 +195,20 @@ body{
   cursor: pointer;
   box-shadow: rgb(0 0 0 / 70%) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   transition-duration: 0.5s;
+<<<<<<< HEAD
   overflow:hidden !important;
 }
 
 
 /* اعداد الصورة 1 */
+=======
+  overflow: hidden !important;
+  z-index: 1;
+}
+
+/* اعداد الصورة 1 */
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark .image1 {
   top: 6%;
   right: 5%;
@@ -169,6 +217,10 @@ body{
 }
 
 /* اعداد الصورة 2 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark .image2 {
   right: 14%;
   top: 59%;
@@ -177,6 +229,10 @@ body{
 }
 
 /* اعداد الصورة 3 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark .image3 {
   right: 32%;
   top: 31%;
@@ -185,6 +241,10 @@ body{
 }
 
 /* /* اعداد الصورة 4 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark .image4 {
   right: 56%;
   top: 56%;
@@ -193,6 +253,10 @@ body{
 }
 
 /* اعداد الصورة 5 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark .image5 {
   right: 51%;
   top: 6%;
@@ -201,6 +265,10 @@ body{
 }
 
 /* اعداد الصورة 6 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark .image6 {
   top: 47%;
   right: 79%;
@@ -209,18 +277,32 @@ body{
 }
 
 /* اعداد الصورة 7 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark .image7 {
   right: 76%;
   top: 7%;
 }
 
 /* جعل بقية الصور تذهب الي اليمن عند الضغط علي الصورة */
+<<<<<<< HEAD
 .content .landmark>div.goright {
   right: 100%;
 }
 
 
 /* جعل الصورة تغير شكلها عند الضغط عليها */
+=======
+
+.content .landmark > div.goright {
+  right: calc(100% + 100px);
+}
+
+/* جعل الصورة تغير شكلها عند الضغط عليها */
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark div.active {
   top: 5%;
   right: 0;
@@ -228,19 +310,34 @@ body{
   width: 50%;
   border-radius: 15px;
   z-index: 10;
+<<<<<<< HEAD
 }
 .content .landmark div.active img{
+=======
+  box-shadow: none;
+}
+
+.content .landmark div.active img {
+>>>>>>> fead3ed (elma4ro3 elgded)
   width: 100%;
   border-radius: 15px;
 }
 
+<<<<<<< HEAD
 .content .landmark div.aber{
+=======
+.content .landmark div.aber {
+>>>>>>> fead3ed (elma4ro3 elgded)
   opacity: 1;
   left: 0;
   z-index: 100;
 }
 
+<<<<<<< HEAD
 .content .landmark .descriotion{
+=======
+.content .landmark .descriotion {
+>>>>>>> fead3ed (elma4ro3 elgded)
   width: 50%;
   height: 100%;
   border-radius: 0;
@@ -254,7 +351,12 @@ body{
   transition-delay: 0.5;
   color: white;
 }
+<<<<<<< HEAD
 .content .landmark .descriotion div{
+=======
+
+.content .landmark .descriotion div {
+>>>>>>> fead3ed (elma4ro3 elgded)
   width: 100%;
   height: 100%;
   display: flex;
@@ -263,12 +365,20 @@ body{
   justify-content: space-evenly;
   align-items: center;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark .descriotion div p.land-name {
   font-size: 50px;
   text-transform: uppercase;
   align-self: flex-start;
   margin-left: 160px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark .descriotion div p.land-des {
   width: 350px;
   align-self: flex-start;
@@ -276,6 +386,10 @@ body{
   font-size: 20px;
   line-height: 1.4;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> fead3ed (elma4ro3 elgded)
 .content .landmark .descriotion div button {
   padding: 10px 20px;
   text-transform: uppercase;
@@ -291,6 +405,7 @@ body{
   transition: 0.5s ease;
   user-select: none;
 }
+<<<<<<< HEAD
 .content .landmark .descriotion div button:hover {
   color: #F7FFF7;
   background: #4ECDC4;
@@ -352,16 +467,84 @@ body{
 }
 
 .content .hotels>div>.btn>div{
+=======
+
+.content .landmark .descriotion div button:hover {
+  color: #f7fff7;
+  background: #4ecdc4;
+  border: 1px solid #4ecdc4;
+  text-shadow: 0 0 5px #f7fff7, 0 0 10px #f7fff7, 0 0 20px #f7fff7;
+  box-shadow: 0 0 5px #4ecdc4, 0 0 20px #4ecdc4, 0 0 50px #4ecdc4,
+    0 0 100px #4ecdc4;
+}
+
+.content .landmark .descriotion div button a {
+  font-size: 18px;
+  color: #f7fff7;
+}
+
+.hotel-title,.restorant-title {
+  padding: 20px;
+}
+
+.hotel-title h1, .restorant-title  h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+.content .slide-show {
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 5%;
+}
+
+.content .slide-show .hotels ,.content .slide-show .restorants {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.content .slide-show .hotels .hotel , .content .slide-show .restorants .restorant {
+  min-width: 33.33%; /* Show three slides at once */
+  box-sizing: border-box;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .slide-show .hotels .hotel img , .content .slide-show .restorants .restorant img {
+  width: 100%;
+  border-radius: 10px;
+  transition: filter 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.content .slide-show .hotels .hotel .hotel-b , .content .slide-show .restorants .restorant .restorant-b{
+  display: flex;
+  justify-content: space-around;
+}
+
+.content .slide-show .hotels .hotel .hotel-b button ,.content .slide-show .restorants .restorant .restorant-b button {
+>>>>>>> fead3ed (elma4ro3 elgded)
   padding: 10px 20px;
   text-transform: uppercase;
   border-radius: 8px;
   font-size: 17px;
   font-weight: 500;
+<<<<<<< HEAD
   color: #292f36;
+=======
+  color: #ffffff80;
+>>>>>>> fead3ed (elma4ro3 elgded)
   text-shadow: none;
   background: transparent;
   cursor: pointer;
   box-shadow: transparent;
+<<<<<<< HEAD
   border: 1px solid #292f36;
   transition: 0.5s ease;
   user-select: none;
@@ -517,3 +700,47 @@ body{
 .submit:hover {
   background: #00d855;
 }
+=======
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+
+.content .slide-show .hotels .hotel .hotel-b button:hover , .content .slide-show .restorants .restorant .restorant-b button:hover{
+  color: #f7fff7;
+  background: #4ecdc4;
+  border: 1px solid #4ecdc4;
+  text-shadow: 0 0 5px #f7fff7, 0 0 10px #f7fff7, 0 0 20px #f7fff7;
+  box-shadow: 0 0 5px #4ecdc4, 0 0 20px #4ecdc4, 0 0 50px #4ecdc4,
+    0 0 100px #4ecdc4;
+}
+
+
+
+.content .slide-show .hotels .hotel .hotel-b button:hover a ,.content .slide-show .restorants .restorant .restorant-b button:hover a{
+  color: white;
+}
+
+.content .slide-show .controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.content .slide-show .controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+}
+
+.content .slide-show .controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+>>>>>>> fead3ed (elma4ro3 elgded)

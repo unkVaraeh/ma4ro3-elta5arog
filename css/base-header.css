@@ -71,6 +71,8 @@ ul{
     flex-grow: 0;
     transition-duration: 0.3s;
     border: none;
+    padding: 10px;
+    margin-bottom: 10px;
   }
   .search input:focus{
     flex-grow: 1;

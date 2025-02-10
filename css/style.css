@@ -497,3 +497,35 @@ input[type="search"]
 
     width: 100%;
 }
+
+a.btn.btn-sm.btn-dark.rounded.py-2.px-4 {
+    display: flex;
+
+    width: -webkit-fill-available;
+    justify-content: space-around;
+}
+
+.container-xxl.py-5 {
+    display: flex;
+
+    position: relative;
+    bottom: 100px;}
+
+    .col-lg-5.col-md-12 {
+        position: relative;
+        top: -150px;
+        left: 500px;}
+
+        .bg-white.shadow {
+            position: relative;
+            bottom: 30px;}
+
+            .row.gy-5.g-4 {
+                position: relative;
+                right: 500px;
+                top: 150px;}
+
+                .text-center.wow.fadeInUp {
+                    position: relative;
+                    top: 25px;}
+
